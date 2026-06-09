@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Genki II - Lesson 18 (John&#x27;s Part-time Job)</title>
+<style>
+:root {
+  --rose-fg: #b34155; --rose-bg: #f7d8de; --rose-light: #fce8eb;
+  --green-fg: #2f7d3e; --green-bg: #cce8d1; --green-light: #e8f4eb;
+  --blue-fg: #2a4f7c; --blue-bg: #d4dfee; --blue-light: #ecf1f8;
+  --orange-fg: #b35900; --orange-bg: #ffd9a8; --orange-light: #fff1de;
+  --purple-fg: #6b3fa0; --purple-bg: #e0d4ef; --purple-light: #f3edfa;
+  --ink: #1a1a1a; --ink-soft: #555;
+}
+* { box-sizing: border-box; }
+body { font-family: "Hiragino Sans","Yu Gothic","Noto Sans CJK JP","Helvetica Neue",Arial,sans-serif; color: var(--ink); margin: 0; background: #f4f4f6; line-height: 1.55; }
+.deck-head { background: var(--rose-fg); color: white; padding: 18px 28px; }
+.deck-head h1 { margin: 0; font-size: 1.6rem; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.deck { max-width: 1100px; margin: 0 auto; padding: 24px 16px 48px; }
+.slide { background: white; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); padding: 24px 28px; margin-bottom: 28px; position: relative; }
+.frametitle { font-size: 1.35rem; font-weight: 700; color: var(--rose-fg); border-bottom: 2px solid var(--rose-bg); padding-bottom: 10px; margin: 0 0 16px; white-space: nowrap; overflow-x: auto; overflow-y: hidden; }
+.alertblock, .exampleblock, .blockbox, .practiceblock, .kanjiblock { border-radius: 6px; margin: 14px 0; overflow: hidden; }
+.alertblock { background: var(--rose-light); border: 1px solid var(--rose-bg); }
+.alertblock > .block-title { background: var(--rose-fg); color: white; }
+.exampleblock { background: var(--green-light); border: 1px solid var(--green-bg); }
+.exampleblock > .block-title { background: var(--green-fg); color: white; }
+.blockbox { background: var(--blue-light); border: 1px solid var(--blue-bg); }
+.blockbox > .block-title { background: var(--blue-fg); color: white; }
+.practiceblock { background: var(--orange-light); border: 1px solid var(--orange-bg); }
+.practiceblock > .block-title { background: var(--orange-fg); color: white; }
+.kanjiblock { background: var(--purple-light); border: 1px solid var(--purple-bg); }
+.kanjiblock > .block-title { background: var(--purple-fg); color: white; }
+.block-title { padding: 6px 12px; font-weight: 600; font-size: 0.95rem; }
+.block-body { padding: 12px 16px; font-size: 0.93rem; }
+.block-body p { margin: 0.4em 0; }
+.block-body ul, .block-body ol { margin: 0.45em 0 0.45em 0; padding-left: 1.6em; }
+.block-body li { margin: 0.28em 0; }
+.item-label { display: inline-block; min-width: 1.5em; font-weight: 600; color: var(--ink-soft); margin-right: 0.4em; }
+ul.itm li::marker { color: var(--rose-fg); }
+ol.enum li::marker { font-weight: 600; color: var(--ink-soft); }
+.c-red { color: #d23047; font-weight: 600; }
+.c-blue { color: #2a59a8; font-weight: 600; }
+.c-brown { color: #8a5a2b; font-weight: 600; }
+.sc { font-variant: small-caps; font-size: 0.85em; letter-spacing: 0.05em; }
+s { text-decoration: line-through; text-decoration-color: #c33; text-decoration-thickness: 2px; }
+sub, sup { font-size: 0.7em; }
+.fmb { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-weight: 600; padding: 0 2px; }
+.framebox { display: inline-block; border: 1.5px solid var(--ink); border-radius: 3px; padding: 1px 6px; font-weight: 600; background: white; }
+ruby rt { font-size: 0.55em; color: var(--ink-soft); }
+.multicols { columns: 2; column-gap: 1.4em; }
+.multicols-2 { columns: 2; }
+.multicols-3 { columns: 3; }
+.multicols-4 { columns: 4; }
+.multicols ul, .multicols ol { break-inside: avoid-column; margin-top: 0; }
+.multicols li { break-inside: avoid-column; }
+.cols-wrap { display: flex; gap: 12px; flex-wrap: wrap; }
+.col { flex: 1 1 40%; }
+.minipage { display: inline-block; vertical-align: top; }
+.center { text-align: center; }
+.spts { font-size: 0.78em; }
+.fns  { font-size: 0.86em; }
+.small { font-size: 0.92em; }
+.large { font-size: 1.1em; }
+.Large { font-size: 1.25em; }
+table.tex-table { border-collapse: collapse; margin: 6px 0; font-size: 0.88em; }
+table.tex-table th, table.tex-table td { border: 1px solid #999; padding: 4px 8px; vertical-align: middle; text-align: center; }
+table.tex-table th { background: #f4f4f4; font-weight: 600; }
+.writing-line { height: 1px; background: #b88a4a; margin: 18px 0; }
+.practice-body { padding-top: 4px; padding-bottom: 4px; }
+.slide-counter { position: absolute; bottom: 8px; right: 14px; font-size: 0.78rem; color: var(--ink-soft); }
+.nav-bar { position: sticky; top: 0; background: rgba(255,255,255,0.96); border-bottom: 1px solid #ddd; padding: 8px 16px; z-index: 100; font-size: 0.85rem; }
+.nav-bar a { color: var(--rose-fg); margin-right: 14px; text-decoration: none; font-weight: 500; white-space: nowrap; }
+.nav-bar a:hover { text-decoration: underline; }
+.kanji-grid { display: flex; flex-wrap: wrap; gap: 12px; margin: 8px 0 4px; padding: 0; list-style: none; }
+.kanji-grid li { display: inline-flex; flex-direction: column; align-items: center; padding: 8px 10px 4px; background: white; border: 1px solid var(--purple-bg); border-radius: 6px; min-width: 52px; }
+.kanji-grid a.k { color: var(--purple-fg); text-decoration: none; font-size: 1.7rem; font-weight: 600; line-height: 1; padding: 2px 4px; border-radius: 3px; transition: background 0.15s; }
+.kanji-grid a.k:hover { background: var(--purple-bg); }
+.kanji-grid .gnum { font-size: 0.62rem; color: var(--ink-soft); margin-top: 4px; }
+@media (max-width: 600px) {
+  .frametitle { font-size: 1.05rem; }
+  .deck-head h1 { font-size: 1.2rem; }
+  .deck { padding: 12px 8px 32px; }
+  .slide { padding: 16px 14px; }
+}
+</style>
+</head>
+<body>
+<header class="deck-head"><h1>Genki II - Lesson 18 (John&#x27;s Part-time Job)</h1></header>
+<nav class="nav-bar"><a href="#s1">Slide 18.1</a><a href="#s2">Slide 18.2</a><a href="#s3">Slide 18.3</a><a href="#s4">Slide 18.4</a><a href="#s5">Slide 18.5</a><a href="#s6">Slide 18.6</a><a href="#s7">Slide 18.7</a></nav>
+<main class="deck">
+<section class='slide' id='s1'>
+<h2 class='frametitle'>18.1: Transitive vs Intransitive</h2>
+<div class='alertblock'><div class='block-title'>Transitive vs Intransitive in Japanese:</div><div class='block-body'><span class='fns'>
+<ul class='itm'>
+<li>Transitive verbs realizes two thematic roles: <span class='c-red'>Subject</span> and <span class='c-blue'>Object</span> (Action denoted)</li>
+<li>Intransitive verbs just one: <span class='c-red'>Subject</span> (Change-of-state denoted)</li>
+</ul>
+
+Japanese often minimally differentiate Transitive-Intransitive verbs of a similar event:
+<ul class='itm'>
+<li>ボブが こおりを <span class='c-red'>とかす</span>。(tok-as) - Bob <span class='c-red'>melts</span> ice.</li>
+<li>こおりが <span class='c-red'>とける</span>。-(tok-eru) Ice <span class='c-red'>melts</span>.</li>
+</ul>
+Unlike English, Japanese almost always encode the Trs-Intr difference phonetically. There are about 20 different patterns of such phonetic differentiation found in Japanese. There are phonetically unrelated pairs as well.
+</span></div></div>
+<div class='exampleblock'><div class='block-title'>Example</div><div class='block-body'><span class='spts'>
+<table class='tex-table'>
+<tr><th>Trs.</th><th>Intr.</th><th>Trs.</th><th>Intr.</th><th>Trs.</th><th>Intr.</th></tr>
+<tr><td>あける</td><td>あく</td><td>しめる</td><td>しまる</td><td>いれる</td><td>はいる</td></tr>
+<tr><td>X <em>opens</em> Y</td><td>X <em>opens</em></td><td>X <em>closes</em> Y</td><td>X <em>closes</em></td><td>X <em>puts</em> Y  <em>in</em></td><td>X enters</td></tr>
+<tr><td>だす</td><td>でる</td><td>つける</td><td>つく</td><td>けす</td><td>きえる</td></tr>
+<tr><td>X <em>takes</em> Y <em>out</em></td><td>X <em>exits</em></td><td>X <em>puts</em> Y <em>on</em></td><td>X <em>goes on</em></td><td>X <em>extinguishes</em> Y</td><td>X <em>goes off</em></td></tr>
+<tr><td>こわす</td><td>こわれる</td><td>よごす</td><td>よごれる</td><td>わかす</td><td>わく</td></tr>
+<tr><td>X <em>breaks</em> Y</td><td>X <em>breaks</em></td><td>X <em>soils</em> Y</td><td>X <em>gets soiled</em></td><td>X <em>boils</em> Y</td><td>X <em>boils</em></td></tr>
+</table>
+</span></div></div>
+<div class='practiceblock'>
+<div class='block-title'>Your own sentence: Compose your own sentence based on the example sentences.</div>
+<div class='block-body practice-body'>
+<div class='writing-line'></div>
+<div class='writing-line'></div>
+</div>
+</div>
+<div class='slide-counter'>1 / 7</div>
+</section>
+<section class='slide' id='s2'>
+<h2 class='frametitle'>18.2: Activity Verbs vs. Change-of-state verbs</h2>
+<div class='alertblock'><div class='block-title'>Activity vs. Change-of-state:</div><div class='block-body'>Most of the transitive verbs are activity verbs and most of the intransitive verbs are change-of-state verbs. They convey different interpretations when they are combined with 〜ている:
+<ul class='itm'>
+<li><strong class='fmb'>Activity V</strong>＋ています: actions in progress: あけています<br>
+ボブは <ruby>窓<rt>まど</rt></ruby>を <ruby>開<rt>あ</rt></ruby>けています。- Bob is opening the window(s).</li>
+<li><strong class='fmb'>C-of-S V</strong>＋ています: achieved state: あいています<br>
+キッチンのまどが あいてます。- The kitchen window is open.</li>
+</ul></div></div>
+<div class='exampleblock'><div class='block-title'>Example</div><div class='block-body'><span class='spts'>
+<ul class='itm'>
+<li>ボブは <ruby>電気<rt>でんき</rt></ruby>を けしています。vs. <ruby>電気<rt>でんき</rt></ruby>が きえています。</li>
+<li>ボブは テレビを こわしてます。vs. テレビは こわれています。</li>
+</ul>
+</span></div></div>
+<div class='blockbox'><div class='block-title'>Note:</div><div class='block-body'>There are transitive C-of-S verbs as `<em>put-on</em>' verbs: きる/はく/かぶる. Their 〜ている expressions are also an achieved-state expression
+<ol class='enum'>
+<li>ボブは 着物を 着ています/ Bob is wearing kimono.</li>
+<li>ボブは 帽子を かぶっています/ Bob is wearing a hat.</li>
+<li>ボブは ブーツを はいています/ Bob is wearing boots.</li>
+</ol></div></div>
+<div class='practiceblock'>
+<div class='block-title'>Your own sentence: Compose your own sentence based on the example sentences.</div>
+<div class='block-body practice-body'>
+<div class='writing-line'></div>
+<div class='writing-line'></div>
+</div>
+</div>
+<div class='slide-counter'>2 / 7</div>
+</section>
+<section class='slide' id='s3'>
+<h2 class='frametitle'>18.3: <strong class='fmb'>V.て</strong>+しまう: ... regret/completion</h2>
+<div class='alertblock'><div class='block-title'>Grammatical Construction:</div><div class='block-body'><strong class='fmb'>V.て</strong>+しまう adds two different interpretations to the verbal interpretation:
+<ol class='enum'>
+<li>the <span class='c-red'>completion</span> of the action:<br>(<ruby>宿題<rt>しゅくだい</rt></ruby>の)<ruby>本<rt>ほん</rt></ruby>を よんでしまいました。/I have read the (assigned) book (already/(with determination) (with determination).</li>
+<li>the <span class='c-red'>regret</span> about the event:<br><ruby>一日<rt>いちにち</rt></ruby>で、(新しい)本をよんでしまいました。/ I read the new book in a day (and I regret).</li>
+</ol>
+... be done with it ... /... it's a done deal ...</div></div>
+<div class='exampleblock'><div class='block-title'>Example</div><div class='block-body'><ol class='enum'>
+<li>お<ruby>客<rt>きゃく</rt></ruby>さんが来る前に、ケーキを<ruby>焼<rt>や</rt></ruby>いてしまいましょう。</li>
+<li>山田さんのケーキを食べてしまいましょう。</li>
+<li>あ、<ruby>犬<rt>いぬ</rt></ruby>を<ruby>殺<rt>ころ</rt></ruby>してしまいました〜！</li>
+<li><ruby>犬<rt>いぬ</rt></ruby>が<ruby>死<rt>し</rt></ruby>んでしまいました。</li>
+</ol></div></div>
+<div class='blockbox'><div class='block-title'>Note:</div><div class='block-body'><span class='spts'>
+〜<span class='c-brown'>てしま</span>います/〜<span class='c-brown'>でしま</span>います are phonetically reduced as 〜<span class='c-brown'>ちゃ</span>います/〜<span class='c-brown'>じゃ</span>います
+
+<ol class='enum'>
+<li>... ケーキを<ruby>焼<rt>や</rt></ruby>い<span class='c-brown'>ちゃ</span>いましょう。</li>
+<li>山田さんのケーキを食べ<span class='c-brown'>ちゃ</span>いましょう。</li>
+<li>... <ruby>殺<rt>ころ</rt></ruby>し<span class='c-brown'>ちゃ</span>いました〜！</li>
+<li>... <ruby>死<rt>し</rt></ruby>ん<span class='c-brown'>じゃ</span>いました。</li>
+</ol>
+</span></div></div>
+<div class='practiceblock'>
+<div class='block-title'>Your own sentence: Compose your own sentence based on the example sentences.</div>
+<div class='block-body practice-body'>
+<div class='writing-line'></div>
+<div class='writing-line'></div>
+</div>
+</div>
+<div class='slide-counter'>3 / 7</div>
+</section>
+<section class='slide' id='s4'>
+<h2 class='frametitle'>18.4: <strong class='fmb'>V.present.plain</strong>+と: Whenever ...</h2>
+<div class='alertblock'><div class='block-title'>Grammatical Construction:</div><div class='block-body'>[<sub><span class='sc'>CAUS</span></sub>... <strong class='fmb'>V.prs.pln</strong>+<span class='c-red'>と</span>] [<sub><span class='sc'>EFFECT</span></sub> clause]: Whenever CAUSE ... EFFECT/If ... (true for everyone)</div></div>
+<div class='exampleblock'><div class='block-title'>Example</div><div class='block-body'><ol class='enum'>
+<li>ボブと あう<span class='c-red'>と</span>、<ruby>私<rt>わたし</rt></ruby>は <ruby>元気<rt>げんき</rt></ruby>なります。 Whenever ...</li>
+<li>子供の時、冬になる<span class='c-red'>と</span>、スキーに 行きました。Whenever ...</li>
+<li>六月になると、シンシナティーは <ruby>暑<rt>あつ</rt></ruby>くなります。Whenever ...</li>
+<li>休みになると、オックスフォードは <ruby>静<rt>しず</rt></ruby>かになります。Whenever ...</li>
+<li>アービンホールを出ると、ハリソンホールが見えます。If ... (and its true for everyone)</li>
+<li>セーターを着ると、暑いですね。If ... (and its true for everyone)</li>
+</ol></div></div>
+<div class='blockbox'><div class='block-title'>Note:</div><div class='block-body'><span class='spts'>
+
+<ol class='enum'>
+<li>The event in the と clause must precede the event in the EFFECT clause:<br>
+<span class='c-red'>BAD</span> - 先生に会う<span class='c-red'>と</span>、オフィスに行きます/Whenever I see the teacher, I go to (his) office.<br>
+<span class='c-red'>ALWAY</span> It has to be: Whenever A, then B.</li>
+</ol>
+</span></div></div>
+<div class='practiceblock'>
+<div class='block-title'>Your own sentence: Compose your own sentence based on the example sentences.</div>
+<div class='block-body practice-body'>
+<div class='writing-line'></div>
+<div class='writing-line'></div>
+</div>
+</div>
+<div class='slide-counter'>4 / 7</div>
+</section>
+<section class='slide' id='s5'>
+<h2 class='frametitle'>18.5: <strong class='fmb'>V.stem</strong>+ながら: ... <em>while</em> ... verb ...</h2>
+<div class='alertblock'><div class='block-title'>Grammatical Construction:</div><div class='block-body'><strong class='fmb'>V.stem</strong>+ながら introduced a <em>while</em> clause into a sentence:</div></div>
+<div class='exampleblock'><div class='block-title'>Example</div><div class='block-body'><ol class='enum'>
+<li>音楽を ききながら ご飯を食べます。</li>
+<li>食べながら、話さないでください。</li>
+<li>テキストを<ruby>送<rt>おく</rt></ruby>りながら、<ruby>運転<rt>うんてん</rt></ruby>してはいけません</li>
+</ol></div></div>
+<div class='blockbox'><div class='block-title'>Note:</div><div class='block-body'>The subject of the while clause and the matrix clause must be the same:<br>
+<span class='c-red'>BAD</span> - ボブがピアノを<ruby>弾<rt>ひ</rt></ruby>きながら、トムは<ruby>歌<rt>うま</rt></ruby>いました。</div></div>
+<div class='practiceblock'>
+<div class='block-title'>Your own sentence: Compose your own sentence based on the example sentences.</div>
+<div class='block-body practice-body'>
+<div class='writing-line'></div>
+<div class='writing-line'></div>
+</div>
+</div>
+<div class='slide-counter'>5 / 7</div>
+</section>
+<section class='slide' id='s6'>
+<h2 class='frametitle'>18.6: <strong class='fmb'>V.<sub><span class='sc'>conditional</span></sub>.ば</strong>+よかった: ... wish otherwise</h2>
+<div class='alertblock'><div class='block-title'>Grammatical Construction:</div><div class='block-body'><span class='spts'>
+<strong class='fmb'>V.<sub><span class='sc'>conditional</span></sub>.ば</strong>+よかった(です): <em>I wish I had</em> ... or <em>I should have</em> ...<br>
+It is built upon the conditional form:
+</span>
+<ol class='enum'>
+<li>る: たべ<s>る</s> → たべ<span class='c-red'>れば</span></li>
+<li>う: の<span class='c-red'>む</span> (nom<s>u</s>) → の<span class='c-red'>めば</span> (nom-<span class='c-red'>eba</span>)</li>
+<li>Irr.: する → す<span class='c-red'>れば</span>  くる → く<span class='c-red'>れば</span></li>
+<li>Negation: 〜なければ</li>
+</ol></div></div>
+<div class='exampleblock'><div class='block-title'>Example</div><div class='block-body'><ol class='enum'>
+<li>「好きだ」と 言えばよかったです。</li>
+<li>テストの前に、ご飯を食べておけばよかった。</li>
+<li>もっと勉強すれば。。。
+</span></li>
+</ol></div></div>
+<div class='blockbox'><div class='block-title'>Note:</div><div class='block-body'><span class='spts'>
+Lesson 22 formally introduce the ば conditional form with more usages of it. The [〜ば]よかった expression literally means ``<em>if I have ... it would be good/better</em>''
+</span></div></div>
+<div class='practiceblock'>
+<div class='block-title'>Your own sentence: Compose your own sentence based on the example sentences.</div>
+<div class='block-body practice-body'>
+<div class='writing-line'></div>
+<div class='writing-line'></div>
+</div>
+</div>
+<div class='slide-counter'>6 / 7</div>
+</section>
+<section class='slide' id='s7'>
+<h2 class='frametitle'>18.7: Kanji / 漢字 (新しい漢字)</h2>
+<div class='kanjiblock'>
+<div class='block-title'>Click each kanji for details on Kanshudo</div>
+<div class='block-body'>
+<ul class='kanji-grid'>
+<li><a class="k" href="https://www.kanshudo.com/kanji/目" target="_blank" rel="noopener">目</a><span class="gnum">225</span></li>
+<li><a class="k" href="https://www.kanshudo.com/kanji/的" target="_blank" rel="noopener">的</a><span class="gnum">226</span></li>
+<li><a class="k" href="https://www.kanshudo.com/kanji/洋" target="_blank" rel="noopener">洋</a><span class="gnum">227</span></li>
+<li><a class="k" href="https://www.kanshudo.com/kanji/服" target="_blank" rel="noopener">服</a><span class="gnum">228</span></li>
+<li><a class="k" href="https://www.kanshudo.com/kanji/堂" target="_blank" rel="noopener">堂</a><span class="gnum">229</span></li>
+<li><a class="k" href="https://www.kanshudo.com/kanji/力" target="_blank" rel="noopener">力</a><span class="gnum">230</span></li>
+<li><a class="k" href="https://www.kanshudo.com/kanji/授" target="_blank" rel="noopener">授</a><span class="gnum">231</span></li>
+<li><a class="k" href="https://www.kanshudo.com/kanji/業" target="_blank" rel="noopener">業</a><span class="gnum">232</span></li>
+<li><a class="k" href="https://www.kanshudo.com/kanji/試" target="_blank" rel="noopener">試</a><span class="gnum">233</span></li>
+<li><a class="k" href="https://www.kanshudo.com/kanji/験" target="_blank" rel="noopener">験</a><span class="gnum">234</span></li>
+<li><a class="k" href="https://www.kanshudo.com/kanji/貸" target="_blank" rel="noopener">貸</a><span class="gnum">235</span></li>
+<li><a class="k" href="https://www.kanshudo.com/kanji/図" target="_blank" rel="noopener">図</a><span class="gnum">236</span></li>
+<li><a class="k" href="https://www.kanshudo.com/kanji/館" target="_blank" rel="noopener">館</a><span class="gnum">237</span></li>
+<li><a class="k" href="https://www.kanshudo.com/kanji/終" target="_blank" rel="noopener">終</a><span class="gnum">238</span></li>
+<li><a class="k" href="https://www.kanshudo.com/kanji/宿" target="_blank" rel="noopener">宿</a><span class="gnum">239</span></li>
+<li><a class="k" href="https://www.kanshudo.com/kanji/題" target="_blank" rel="noopener">題</a><span class="gnum">240</span></li>
+</ul>
+</div>
+</div>
+<div class='slide-counter'>7 / 7</div>
+</section>
+</main>
+</body>
+</html>

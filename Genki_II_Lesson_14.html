@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Genki II - Lesson 14 (Valentine&#x27;s Day)</title>
+<style>
+:root {
+  --rose-fg: #b34155; --rose-bg: #f7d8de; --rose-light: #fce8eb;
+  --green-fg: #2f7d3e; --green-bg: #cce8d1; --green-light: #e8f4eb;
+  --blue-fg: #2a4f7c; --blue-bg: #d4dfee; --blue-light: #ecf1f8;
+  --orange-fg: #b35900; --orange-bg: #ffd9a8; --orange-light: #fff1de;
+  --purple-fg: #6b3fa0; --purple-bg: #e0d4ef; --purple-light: #f3edfa;
+  --ink: #1a1a1a; --ink-soft: #555;
+}
+* { box-sizing: border-box; }
+body { font-family: "Hiragino Sans","Yu Gothic","Noto Sans CJK JP","Helvetica Neue",Arial,sans-serif; color: var(--ink); margin: 0; background: #f4f4f6; line-height: 1.55; }
+.deck-head { background: var(--rose-fg); color: white; padding: 18px 28px; }
+.deck-head h1 { margin: 0; font-size: 1.6rem; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.deck { max-width: 1100px; margin: 0 auto; padding: 24px 16px 48px; }
+.slide { background: white; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); padding: 24px 28px; margin-bottom: 28px; position: relative; }
+.frametitle { font-size: 1.35rem; font-weight: 700; color: var(--rose-fg); border-bottom: 2px solid var(--rose-bg); padding-bottom: 10px; margin: 0 0 16px; white-space: nowrap; overflow-x: auto; overflow-y: hidden; }
+.alertblock, .exampleblock, .blockbox, .practiceblock, .kanjiblock { border-radius: 6px; margin: 14px 0; overflow: hidden; }
+.alertblock { background: var(--rose-light); border: 1px solid var(--rose-bg); }
+.alertblock > .block-title { background: var(--rose-fg); color: white; }
+.exampleblock { background: var(--green-light); border: 1px solid var(--green-bg); }
+.exampleblock > .block-title { background: var(--green-fg); color: white; }
+.blockbox { background: var(--blue-light); border: 1px solid var(--blue-bg); }
+.blockbox > .block-title { background: var(--blue-fg); color: white; }
+.practiceblock { background: var(--orange-light); border: 1px solid var(--orange-bg); }
+.practiceblock > .block-title { background: var(--orange-fg); color: white; }
+.kanjiblock { background: var(--purple-light); border: 1px solid var(--purple-bg); }
+.kanjiblock > .block-title { background: var(--purple-fg); color: white; }
+.block-title { padding: 6px 12px; font-weight: 600; font-size: 0.95rem; }
+.block-body { padding: 12px 16px; font-size: 0.93rem; }
+.block-body p { margin: 0.4em 0; }
+.block-body ul, .block-body ol { margin: 0.45em 0 0.45em 0; padding-left: 1.6em; }
+.block-body li { margin: 0.28em 0; }
+.item-label { display: inline-block; min-width: 1.5em; font-weight: 600; color: var(--ink-soft); margin-right: 0.4em; }
+ul.itm li::marker { color: var(--rose-fg); }
+ol.enum li::marker { font-weight: 600; color: var(--ink-soft); }
+.c-red { color: #d23047; font-weight: 600; }
+.c-blue { color: #2a59a8; font-weight: 600; }
+.c-brown { color: #8a5a2b; font-weight: 600; }
+.sc { font-variant: small-caps; font-size: 0.85em; letter-spacing: 0.05em; }
+s { text-decoration: line-through; text-decoration-color: #c33; text-decoration-thickness: 2px; }
+sub, sup { font-size: 0.7em; }
+.fmb { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-weight: 600; padding: 0 2px; }
+.framebox { display: inline-block; border: 1.5px solid var(--ink); border-radius: 3px; padding: 1px 6px; font-weight: 600; background: white; }
+ruby rt { font-size: 0.55em; color: var(--ink-soft); }
+.multicols { columns: 2; column-gap: 1.4em; }
+.multicols-2 { columns: 2; }
+.multicols-3 { columns: 3; }
+.multicols-4 { columns: 4; }
+.multicols ul, .multicols ol { break-inside: avoid-column; margin-top: 0; }
+.multicols li { break-inside: avoid-column; }
+.cols-wrap { display: flex; gap: 12px; flex-wrap: wrap; }
+.col { flex: 1 1 40%; }
+.minipage { display: inline-block; vertical-align: top; }
+.center { text-align: center; }
+.spts { font-size: 0.78em; }
+.fns  { font-size: 0.86em; }
+.small { font-size: 0.92em; }
+.large { font-size: 1.1em; }
+.Large { font-size: 1.25em; }
+table.tex-table { border-collapse: collapse; margin: 6px 0; font-size: 0.88em; }
+table.tex-table th, table.tex-table td { border: 1px solid #999; padding: 4px 8px; vertical-align: middle; text-align: center; }
+table.tex-table th { background: #f4f4f4; font-weight: 600; }
+.writing-line { height: 1px; background: #b88a4a; margin: 18px 0; }
+.practice-body { padding-top: 4px; padding-bottom: 4px; }
+.slide-counter { position: absolute; bottom: 8px; right: 14px; font-size: 0.78rem; color: var(--ink-soft); }
+.nav-bar { position: sticky; top: 0; background: rgba(255,255,255,0.96); border-bottom: 1px solid #ddd; padding: 8px 16px; z-index: 100; font-size: 0.85rem; }
+.nav-bar a { color: var(--rose-fg); margin-right: 14px; text-decoration: none; font-weight: 500; white-space: nowrap; }
+.nav-bar a:hover { text-decoration: underline; }
+.kanji-grid { display: flex; flex-wrap: wrap; gap: 12px; margin: 8px 0 4px; padding: 0; list-style: none; }
+.kanji-grid li { display: inline-flex; flex-direction: column; align-items: center; padding: 8px 10px 4px; background: white; border: 1px solid var(--purple-bg); border-radius: 6px; min-width: 52px; }
+.kanji-grid a.k { color: var(--purple-fg); text-decoration: none; font-size: 1.7rem; font-weight: 600; line-height: 1; padding: 2px 4px; border-radius: 3px; transition: background 0.15s; }
+.kanji-grid a.k:hover { background: var(--purple-bg); }
+.kanji-grid .gnum { font-size: 0.62rem; color: var(--ink-soft); margin-top: 4px; }
+@media (max-width: 600px) {
+  .frametitle { font-size: 1.05rem; }
+  .deck-head h1 { font-size: 1.2rem; }
+  .deck { padding: 12px 8px 32px; }
+  .slide { padding: 16px 14px; }
+}
+</style>
+</head>
+<body>
+<header class="deck-head"><h1>Genki II - Lesson 14 (Valentine&#x27;s Day)</h1></header>
+<nav class="nav-bar"><a href="#s1">Slide 14.1</a><a href="#s2">Slide 14.2</a><a href="#s3">Slide 14.3</a><a href="#s4">Slide 14.4</a><a href="#s5">Slide 14.5</a><a href="#s6">Slide 14.6</a></nav>
+<main class="deck">
+<section class='slide' id='s1'>
+<h2 class='frametitle'>14-1: P54: ほしい(です)/want 〜</h2>
+<div class='alertblock'><div class='block-title'>Grammatical Construction:</div><div class='block-body'><span class='small'>
+
+Y-<span class='framebox'>は</span> X-<span class='framebox'>が</span> ほしい(です)。<br>
+`ほしい' is an <em>i</em>-adjective. It literally means: `<em>As for Y, X is desired</em>.' 
+</span></div></div>
+<div class='exampleblock'><div class='block-title'>Example</div><div class='block-body'><ol class='enum'>
+<li><ruby>私<rt>わたし</rt></ruby>は いい<ruby>辞書<rt>じしょ</rt></ruby><span class='c-red'>が</span> ほしいです。/I want a good dictionary.</li>
+<li>クリスマスは <ruby>新<rt>あたら</rt></ruby>しい<ruby>靴<rt>くつ</rt></ruby><span class='c-red'>が</span> ほしいです。/As for Xmas, I want new shoes.</li>
+<li>コンピューターは マック<span class='c-red'>が</span> ほしいです。/As for computers, I want a Mac.</li>
+<li><ruby>誕生日<rt>たんじょうび</rt></ruby>は 何<span class='c-red'>が</span> ほしいですか。/What do you want for your birthday? 
+</span></li>
+</ol></div></div>
+<div class='blockbox'><div class='block-title'>Note:</div><div class='block-body'><div class='minipage'> 
+<span class='spts'>
+
+Polite<br>
+.9
+<table class='tex-table'>
+<tr><th><span class='c-red'>い</span></th><th>Affirmative</th><th>Negative</th></tr>
+<tr><td>2*Present</td><td>2*ほし<span class='c-red'>いです</span></td><td>ほし<span class='c-red'>くないです</span></td></tr>
+<tr><td></td><td></td><td>ほし<span class='c-red'>くありません</span></td></tr>
+<tr><td>2*Past</td><td>2*ほし<span class='c-red'>かったです</span></td><td>ほし<span class='c-red'>くなかったです</span></td></tr>
+<tr><td></td><td></td><td>ほし<span class='c-red'>くありませんでした</span></td></tr>
+</table><br>
+Plain<br>
+<table class='tex-table'>
+<tr><th><span class='c-red'>い</span></th><th>Affirmative</th><th>Negative</th></tr>
+<tr><td>Present</td><td>ほし<span class='c-red'>い</span></td><td>ほし<span class='c-red'>くない</span></td></tr>
+<tr><td>Past</td><td>ほし<span class='c-red'>かった</span></td><td>ほし<span class='c-red'>くなかった</span></td></tr>
+</table>
+
+</span>
+</div>
+<div class='minipage'>
+<span class='fns'>
+ほしい is used to describe the first and second person's `want' only (トム-は X-<span class='c-red'>を</span> ほしがっている).  It is called a `private predicate.' It denotes firsthand sensations of a speaker.
+</span>
+</div></div></div>
+<div class='practiceblock'>
+<div class='block-title'>Your own sentence: Compose your own sentence based on the example sentences.</div>
+<div class='block-body practice-body'>
+<div class='writing-line'></div>
+<div class='writing-line'></div>
+</div>
+</div>
+<div class='slide-counter'>1 / 6</div>
+</section>
+<section class='slide' id='s2'>
+<h2 class='frametitle'>14-2: P55: 〜かもしれません</h2>
+<div class='alertblock'><div class='block-title'>Grammatical Construction:</div><div class='block-body'><ul class='itm'>
+<li><span class='framebox'>Verb/Adj<sub>PLAIN</sub></span>+かもしれません/かもしれない</li>
+<li>です(〜です/Na-Adj pres/aff): +かもしれません/かもしれない</li>
+</ul>
+<span class='small'>It's conjectural: `<em>It is possible that</em> ...' (You are not sure but you guess so.)</span></div></div>
+<div class='exampleblock'><div class='block-title'>Example</div><div class='block-body'><span class='spts'>
+<ol class='enum'>
+<li>今日、デイトンに <span class='c-red'><ruby>行<rt>い</rt></ruby>く</span>かもしれません。</li>
+<li>シンシーには <span class='c-red'>行かない</span>かもしれません。</li>
+<li>山田さんは 日本に <span class='c-red'><ruby>帰<rt>かえ</rt></ruby>った</span>かもしれません</li>
+<li>今年は 日本に <span class='c-red'>帰らなかった</span>かもしれない</li>
+<li>今日は <span class='c-red'><ruby>暑<rt>あつ</rt></ruby>い</span>かもしれません</li>
+<li>今日は <span class='c-red'>暑くない</span>かもしれません</li>
+<li><ruby>東京<rt>とうきょう</rt></ruby>は <span class='c-red'>暑くなかった</span>かもしれません</li>
+<li>あの<ruby>人<rt>ひと</rt></ruby>は <ruby>日本人<rt>にほんじん</rt></ruby>かもしれません</li>
+<li>あの人は 日本人<span class='c-red'>じゃない</span>かもしれません</li>
+<li>山田さんは <ruby>静<rt>しず</rt></ruby>かな<ruby>子供<rt>こども</rt></ruby><span class='c-red'>だった</span>かもしれません</li>
+<li>あの人は <ruby>先生<rt>せんせい</rt></ruby><span class='c-red'>じゃなかった</span>かもしれません</li>
+<li>トムは ピザが すきかもしれません</li>
+</ol>
+</span></div></div>
+<div class='blockbox'><div class='block-title'>Note:</div><div class='block-body'>It is in a negative form. However, `かもしれません/かもしれない' itself always stays negative. It is idiomatic.</div></div>
+<div class='practiceblock'>
+<div class='block-title'>Your own sentence: Compose your own sentence based on the example sentences.</div>
+<div class='block-body practice-body'>
+<div class='writing-line'></div>
+<div class='writing-line'></div>
+</div>
+</div>
+<div class='slide-counter'>2 / 6</div>
+</section>
+<section class='slide' id='s3'>
+<h2 class='frametitle'>14-3: P56-: あげる/くれる and もらう</h2>
+<div class='alertblock'><div class='block-title'>Grammatical Constructions:</div><div class='block-body'><span class='spts'>
+<strong class='fmb'>あげる/くれる</strong> are both equivalent to English <em>give</em>. However, they are in complementary distributions:
+
+<ol class='enum'>
+<li><span class='c-red'>I</span> give to someone: あげる</li>
+<li>someone gives to someone: あげる</li>
+<li>Someone gives to <span class='c-red'>me</span>: くれる</li>
+</ol>
+
+くれる is selected when the beneficiary is the speaker (or someone closely associated to the speaker), and あげる elsewhere.
+
+<strong class='fmb'>もらう</strong> is translated as <em>receive</em>. However, the <em>source</em> (marked with 〜に/から) of もらう must not be the speaker (or someone closely associated to the speaker):
+
+<ol class='enum'>
+<li><span class='c-red'>I</span> received from someone:  もらう</li>
+</ol>
+
+Particles:
+
+<ol class='enum'>
+<li>The <em>beneficiary</em>, who is <em>given to</em>, of あげる/くれる is marked with 〜<span class='c-blue'>に</span></li>
+<li>The <em>source</em>, who <em>gives</em>, of もらう is marked with 〜<span class='c-blue'>に</span> or 〜<span class='c-blue'>から</span></li>
+</ol>
+</span></div></div>
+<div class='exampleblock'><div class='block-title'>Example</div><div class='block-body'><ol class='enum'>
+<li>私は ボブ<span class='c-red'>に</span> <ruby>本<rt>ほん</rt></ruby>を あげました。</li>
+<li>ボブは トム<span class='c-red'>に</span> <ruby>本<rt>ほん</rt></ruby>を あげました。</li>
+<li>ボブは 私<span class='c-red'>に</span> 本を くれました。</li>
+<li>ボブは <ruby>妹<rt>いもうと</rt></ruby><span class='c-red'>に</span> 本を くれました。</li>
+<li>私は ボブ<span class='c-red'>から</span> 本を もらいました。
+<span class='spts'></li>
+<li>妹(さん)は ボブから 本を もらいました。</span></li>
+<li>NO: ボブは 私<span class='c-red'>から</span> 本を もらいました。</li>
+<li>ボブは 妹*(さん)<span class='c-red'>から</span> 本を もらいました。
+</span></li>
+</ol></div></div>
+<div class='practiceblock'>
+<div class='block-title'>Your own sentence: Compose your own sentence based on the example sentences.</div>
+<div class='block-body practice-body'>
+<div class='writing-line'></div>
+<div class='writing-line'></div>
+</div>
+</div>
+<div class='slide-counter'>3 / 6</div>
+</section>
+<section class='slide' id='s4'>
+<h2 class='frametitle'>14-4:  P58-: 〜たらどうですか</h2>
+<div class='alertblock'><div class='block-title'>Grammatical Construction:</div><div class='block-body'><strong class='fmb'>Verb<sub>PLAIN.PAST.AFF</sub>〜た</strong> らどう(ですか)＝ Why don't you/How about 〜</div></div>
+<div class='exampleblock'><div class='block-title'>Example</div><div class='block-body'><ol class='enum'>
+<li><ruby>毎日<rt>まいにち</rt></ruby> <ruby>勉強<rt>べんきょう</rt></ruby>したらどうですか。/How about studying everyday.</li>
+<li><ruby>薬<rt>くすり</rt></ruby>を <ruby>飲<rt>の</rt></ruby>んだらどうですか。/Why don't you take some medicine.</li>
+</ol></div></div>
+<div class='blockbox'><div class='block-title'>Note:</div><div class='block-body'><span class='spts'>
+<ol class='enum'>
+<li>〜たらどうですか is used when a topic is already set. use 〜ませんか when you are introducing a new idea: 
+
+
+<span class='spts'>
+</span></li>
+<li><span class='item-label'>-</span> <strong class='fmb'>ボブ</strong>: 今週、ひまだなぁ。<strong class='fmb'>You</strong>: じゃあ、うちに来たらどうですか。</li>
+<li><span class='item-label'>-</span> <strong class='fmb'>You</strong>: こんにちは、ボブさん、<ruby>明日<rt>あした</rt></ruby> うちに 来ませんか。
+</li>
+<li>〜たらどうですか may have a critical tone. Use only when you are welcomed to advise.</li>
+</ol>
+
+</span></div></div>
+<div class='practiceblock'>
+<div class='block-title'>Your own sentence: Compose your own sentence based on the example sentences.</div>
+<div class='block-body practice-body'>
+<div class='writing-line'></div>
+<div class='writing-line'></div>
+</div>
+</div>
+<div class='slide-counter'>4 / 6</div>
+</section>
+<section class='slide' id='s5'>
+<h2 class='frametitle'>14-5:  P58-: <strong class='fmb'>#-Counter</strong>+も/しか</h2>
+<div class='alertblock'><div class='block-title'>Grammatical Construction:</div><div class='block-body'><span class='fns'>
+A number with a counter can be added to a noun after a particle as:<br>
+<strong class='fmb'>Noun-(が/を) #Counter</strong>
+<ol class='enum'>
+<li>[... <strong class='fmb'>#-Counter</strong>+も ...]  adds: ``<em>〜 as many as</em> <strong class='fmb'>#-Counter</strong>''</li>
+<li>[... <strong class='fmb'>#-Counter</strong>+しか ... Negative]  adds: ``<em>〜 as few as/only</em> <strong class='fmb'>#-Counter</strong>''</li>
+</ol>
+</span></div></div>
+<div class='exampleblock'><div class='block-title'>Example</div><div class='block-body'><ol class='enum'>
+<li>ボブのうちには <ruby>犬<rt>いぬ</rt></ruby>が ５<ruby>匹<rt>ひき</rt></ruby>も います/There are as many as 5 dogs at Bob's place.</li>
+<li><ruby>昨日<rt>きのう</rt></ruby> パンケーキを 10<ruby>枚<rt>まい</rt></ruby>も <ruby>食<rt>た</rt></ruby>べました。/I ate as many as 10 pancakes yesterday.</li>
+<li>私は 一<ruby>枚<rt>まい</rt></ruby><span class='c-red'>しか</span> <ruby>食<rt>た</rt></ruby>べ<span class='c-red'>ませんでした</span>。/I only ate one pancake.</li>
+<li>うちに <ruby>車<rt>くるま</rt></ruby>は <ruby>一台<rt>いちだい</rt></ruby><span class='c-red'>しか</span> あり<span class='c-red'>ません</span>。/Our family has only one car.
+</span></li>
+</ol></div></div>
+<div class='blockbox'><div class='block-title'>Note:</div><div class='block-body'><span class='fns'>
+[... <strong class='fmb'>#-Counter</strong>+も ...] can be possibly used in a negative sentence. However, with `one,' the interpretation is rather `not at all/not even one:</span>
+
+<ol class='enum'>
+<li>私は 一<ruby>枚<rt>まい</rt></ruby><span class='c-red'>も</span> <ruby>食<rt>た</rt></ruby>べ<span class='c-red'>ませんでした</span>。/I did not even eat one pancake. 
+</span></li>
+</ol></div></div>
+<div class='practiceblock'>
+<div class='block-title'>Your own sentence: Compose your own sentence based on the example sentences.</div>
+<div class='block-body practice-body'>
+<div class='writing-line'></div>
+<div class='writing-line'></div>
+</div>
+</div>
+<div class='slide-counter'>5 / 6</div>
+</section>
+<section class='slide' id='s6'>
+<h2 class='frametitle'>14.6: Kanji / 漢字 (新しい漢字)</h2>
+<div class='kanjiblock'>
+<div class='block-title'>Click each kanji for details on Kanshudo</div>
+<div class='block-body'>
+<ul class='kanji-grid'>
+<li><a class="k" href="https://www.kanshudo.com/kanji/彼" target="_blank" rel="noopener">彼</a><span class="gnum">162</span></li>
+<li><a class="k" href="https://www.kanshudo.com/kanji/代" target="_blank" rel="noopener">代</a><span class="gnum">163</span></li>
+<li><a class="k" href="https://www.kanshudo.com/kanji/留" target="_blank" rel="noopener">留</a><span class="gnum">164</span></li>
+<li><a class="k" href="https://www.kanshudo.com/kanji/族" target="_blank" rel="noopener">族</a><span class="gnum">165</span></li>
+<li><a class="k" href="https://www.kanshudo.com/kanji/親" target="_blank" rel="noopener">親</a><span class="gnum">166</span></li>
+<li><a class="k" href="https://www.kanshudo.com/kanji/切" target="_blank" rel="noopener">切</a><span class="gnum">167</span></li>
+<li><a class="k" href="https://www.kanshudo.com/kanji/英" target="_blank" rel="noopener">英</a><span class="gnum">168</span></li>
+<li><a class="k" href="https://www.kanshudo.com/kanji/店" target="_blank" rel="noopener">店</a><span class="gnum">169</span></li>
+<li><a class="k" href="https://www.kanshudo.com/kanji/去" target="_blank" rel="noopener">去</a><span class="gnum">170</span></li>
+<li><a class="k" href="https://www.kanshudo.com/kanji/急" target="_blank" rel="noopener">急</a><span class="gnum">171</span></li>
+<li><a class="k" href="https://www.kanshudo.com/kanji/乗" target="_blank" rel="noopener">乗</a><span class="gnum">172</span></li>
+<li><a class="k" href="https://www.kanshudo.com/kanji/当" target="_blank" rel="noopener">当</a><span class="gnum">173</span></li>
+<li><a class="k" href="https://www.kanshudo.com/kanji/音" target="_blank" rel="noopener">音</a><span class="gnum">174</span></li>
+<li><a class="k" href="https://www.kanshudo.com/kanji/楽" target="_blank" rel="noopener">楽</a><span class="gnum">175</span></li>
+<li><a class="k" href="https://www.kanshudo.com/kanji/医" target="_blank" rel="noopener">医</a><span class="gnum">176</span></li>
+<li><a class="k" href="https://www.kanshudo.com/kanji/者" target="_blank" rel="noopener">者</a><span class="gnum">177</span></li>
+</ul>
+</div>
+</div>
+<div class='slide-counter'>6 / 6</div>
+</section>
+</main>
+</body>
+</html>
