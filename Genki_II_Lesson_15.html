@@ -83,11 +83,21 @@ table.tex-table th { background: #f4f4f4; font-weight: 600; }
   .deck { padding: 12px 8px 32px; }
   .slide { padding: 16px 14px; }
 }
+
+/* exercise-session helpers (quiz prep) */
+details.gk-key { margin-top: 8px; background: white; border: 1px dashed #bbb; border-radius: 5px; padding: 6px 10px; }
+details.gk-key > summary { cursor: pointer; font-weight: 600; color: var(--ink-soft); font-size: 0.88em; list-style: none; }
+details.gk-key > summary::before { content: "\25B6  "; font-size: 0.8em; }
+details.gk-key[open] > summary::before { content: "\25BC  "; }
+details.gk-key > div { margin-top: 6px; font-size: 0.9em; line-height: 1.8; }
+.aim { font-size: 0.85em; color: var(--ink-soft); font-style: italic; margin: 0 0 6px; }
+.multicols-2 { columns: 2; column-gap: 1.4em; }
+ul.multicols-2 li, ol.multicols-2 li { break-inside: avoid-column; }
 </style>
 </head>
 <body>
 <header class="deck-head"><h1>Genki II - Lesson 15 (A Trip to Nagano)</h1></header>
-<nav class="nav-bar"><a href="#s1">Slide 15.1</a><a href="#s2">Slide 15.2</a><a href="#s3">Slide 15.3</a><a href="#s4">Slide 15.4</a><a href="#s5">Slide 15.5</a></nav>
+<nav class="nav-bar"><a href="#s1">Slide 15.1</a><a href="#s2">Slide 15.2</a><a href="#s3">Slide 15.3</a><a href="#s4">Slide 15.4</a><a href="#s15ex1">Ex A–B</a><a href="#s15ex2">Ex C–E</a><a href="#s5">Slide 15.5</a></nav>
 <main class="deck">
 <section class='slide' id='s1'>
 <h2 class='frametitle'><span class='large'>15.1: Volitional Forms: 〜よう・/o/う or 〜ましょう (Let us/me)</span></h2>
@@ -115,7 +125,7 @@ table.tex-table th { background: #f4f4f4; font-weight: 600; }
 <div class='writing-line'></div>
 </div>
 </div>
-<div class='slide-counter'>1 / 5</div>
+<div class='slide-counter'>1 / 7</div>
 </section>
 <section class='slide' id='s2'>
 <h2 class='frametitle'>15.2: <strong class='fmb'>Volitional Form</strong>+と<ruby>思<rt>おも</rt></ruby>っています </h2>
@@ -142,7 +152,7 @@ table.tex-table th { background: #f4f4f4; font-weight: 600; }
 <div class='writing-line'></div>
 </div>
 </div>
-<div class='slide-counter'>2 / 5</div>
+<div class='slide-counter'>2 / 7</div>
 </section>
 <section class='slide' id='s3'>
 <h2 class='frametitle'><span class='large'>15.3: V.て+おく: doing something in advance (in preparation)</span></h2>
@@ -165,7 +175,7 @@ table.tex-table th { background: #f4f4f4; font-weight: 600; }
 <div class='writing-line'></div>
 </div>
 </div>
-<div class='slide-counter'>3 / 5</div>
+<div class='slide-counter'>3 / 7</div>
 </section>
 <section class='slide' id='s4'>
 <h2 class='frametitle'>15.4: Relative Clause + Noun</h2>
@@ -201,7 +211,107 @@ table.tex-table th { background: #f4f4f4; font-weight: 600; }
 <div class='writing-line'></div>
 </div>
 </div>
-<div class='slide-counter'>4 / 5</div>
+<div class='slide-counter'>4 / 7</div>
+</section>
+<!-- ====== L15 Exercises A-B ====== -->
+<section class='slide' id='s15ex1'>
+<h2 class='frametitle'>In-Class Exercises: A–B (Volitional ・ 〜と<ruby>思<rt>おも</rt></ruby>っています)</h2>
+<div class='blockbox'><div class='block-title'>Exercise A : Potential &amp; Volitional form chart (model: Quiz §3)</div><div class='block-body'><span class='small'>
+Fill in the forms. (Potential is review from L13; Volitional is 15.1.)
+<table class='tex-table' style='margin:0 auto;'>
+<tr><th>Dict.</th><th>type</th><th>Potential</th><th>Volitional</th></tr>
+<tr><td>たべる</td><td>る</td><td>＿＿＿</td><td>＿＿＿</td></tr>
+<tr><td>はなす</td><td>う</td><td>＿＿＿</td><td>＿＿＿</td></tr>
+<tr><td>あそぶ</td><td>う</td><td>＿＿＿</td><td>＿＿＿</td></tr>
+<tr><td>のむ</td><td>う</td><td>＿＿＿</td><td>＿＿＿</td></tr>
+<tr><td>およぐ</td><td>う</td><td>＿＿＿</td><td>＿＿＿</td></tr>
+<tr><td>のぼる</td><td>う</td><td>＿＿＿</td><td>＿＿＿</td></tr>
+<tr><td>かく</td><td>う</td><td>＿＿＿</td><td>＿＿＿</td></tr>
+<tr><td>する</td><td>irr</td><td>＿＿＿</td><td>＿＿＿</td></tr>
+<tr><td>くる</td><td>irr</td><td>＿＿＿</td><td>＿＿＿</td></tr>
+</table>
+<details class='gk-key'><summary>Answer key</summary><div>
+たべる → <span class='c-red'>たべられる</span> / <span class='c-red'>たべよう</span><br>
+はなす → <span class='c-red'>はなせる</span> / <span class='c-red'>はなそう</span><br>
+あそぶ → <span class='c-red'>あそべる</span> / <span class='c-red'>あそぼう</span><br>
+のむ → <span class='c-red'>のめる</span> / <span class='c-red'>のもう</span><br>
+およぐ → <span class='c-red'>およげる</span> / <span class='c-red'>およごう</span><br>
+のぼる → <span class='c-red'>のぼれる</span> / <span class='c-red'>のぼろう</span><br>
+かく → <span class='c-red'>かける</span> / <span class='c-red'>かこう</span><br>
+する → <span class='c-red'>できる</span> / <span class='c-red'>しよう</span><br>
+くる → <span class='c-red'>こられる</span> / <span class='c-red'>こよう</span>
+<div class='fns' style='margin-top:4px'>う-verb volitional: last /u/ → /o/ + う (のむ→のもう). る-verb: drop る + よう (たべる→たべよう).</div>
+</div></details>
+</span></div></div>
+<div class='blockbox'><div class='block-title'>Exercise B : Volitional usage &amp; 〜と思っています (model: Quiz §4 ・ Slides 15.1–15.2)</div><div class='block-body'><span class='small'>
+Translate into Japanese (売る＝うる / to sell).
+<ol class='enum'>
+<li>Let's sell (it)! <span class='fns'>(use a volitional form)</span></li>
+<li>Shall I teach (you)? <span class='fns'>(first person が)</span></li>
+<li>I have been thinking about selling (it).</li>
+<li>I intend to go to Japan.</li>
+<li>Bob intends to sell (it). <span class='fns'>(3rd person)</span></li>
+</ol>
+<details class='gk-key'><summary>Answer key</summary><div>
+1. <ruby>売<rt>う</rt></ruby>ろう。<br>
+2. <span class='c-red'>（わたしが）</span><ruby>教<rt>おし</rt></ruby>えましょうか。<br>
+3. <ruby>売<rt>う</rt></ruby>ろうと<ruby>思<rt>おも</rt></ruby>っています。<br>
+4. <ruby>日本<rt>にほん</rt></ruby>に<ruby>行<rt>い</rt></ruby>こうと<ruby>思<rt>おも</rt></ruby>います。<br>
+5. ボブは <ruby>売<rt>う</rt></ruby>ろうと<ruby>思<rt>おも</rt></ruby>っています。 <span class='fns'>(3rd person → 思っています only)</span>
+<div class='fns' style='margin-top:4px'>と思います = “I intend to…” ・ と思っています = “I have been thinking about…”</div>
+</div></details>
+</span></div></div>
+<div class='slide-counter'>5 / 7</div>
+</section>
+<!-- ====== L15 Exercises C-E ====== -->
+<section class='slide' id='s15ex2'>
+<h2 class='frametitle'>In-Class Exercises: C–E (Relative Clause ・ 〜ておく ・ Kanji)</h2>
+<div class='blockbox'><div class='block-title'>Exercise C : Relative clause + Noun (model: Quiz §6 ・ Slide 15.4)</div><div class='block-body'><span class='small'>
+Turn each sentence into a relative clause modifying the noun in （ ）.
+<ol class='enum'>
+<li><ruby>父<rt>ちち</rt></ruby>は わたしに くれました。 → これは ＿＿＿（ジャケット）です。</li>
+<li><ruby>友<rt>とも</rt></ruby>だちは <ruby>住<rt>す</rt></ruby>んでいます。 → これは ＿＿＿（アパート）です。</li>
+<li><ruby>兄<rt>あに</rt></ruby>は <ruby>予約<rt>よやく</rt></ruby>しました。 → これは ＿＿＿（ホテル）です。</li>
+<li>きのう <ruby>買<rt>か</rt></ruby>いました。 → ＿＿＿（本）を きょう <ruby>読<rt>よ</rt></ruby>みました。</li>
+<li><ruby>町<rt>まち</rt></ruby>が きれいです。 → シンガポールは ＿＿＿（ところ）です。</li>
+</ol>
+<details class='gk-key'><summary>Answer key</summary><div>
+1. これは [<ruby>父<rt>ちち</rt></ruby>が わたしに くれた] ジャケットです。<br>
+2. これは [<ruby>友<rt>とも</rt></ruby>だちが <ruby>住<rt>す</rt></ruby>んでいる] アパートです。<br>
+3. これは [<ruby>兄<rt>あに</rt></ruby>が <ruby>予約<rt>よやく</rt></ruby>した] ホテルです。<br>
+4. [きのう <ruby>買<rt>か</rt></ruby>った] <ruby>本<rt>ほん</rt></ruby>を きょう <ruby>読<rt>よ</rt></ruby>みました。<br>
+5. シンガポールは [<ruby>町<rt>まち</rt></ruby>が きれい<span class='c-blue'>な</span>] ところです。
+<div class='fns' style='margin-top:4px'>Embedded subject takes <span class='c-red'>が</span>. Present な-adj / noun clauses end in <span class='c-blue'>な</span> / <span class='c-blue'>の</span> (きれい<span class='c-blue'>な</span>ところ, <ruby>緑<rt>みどり</rt></ruby><span class='c-blue'>の</span><ruby>家<rt>いえ</rt></ruby>).</div>
+</div></details>
+</span></div></div>
+<div class='practiceblock'><div class='block-title'>Exercise D : 〜ておく, preparation (model: Quiz §7 ・ Slide 15.3)</div><div class='block-body practice-body'><span class='small'>
+Situation: <strong><ruby>来週<rt>らいしゅう</rt></ruby>、<ruby>大<rt>おお</rt></ruby>きい <ruby>地震<rt>じしん</rt></ruby>が あります。</strong> What will you do to prepare? Write three 〜ておきます sentences.
+<div class='fns' style='margin:2px 0 6px'>Model: <ruby>水<rt>みず</rt></ruby>を <ruby>買<rt>か</rt></ruby>っておきます。／ <ruby>食<rt>た</rt></ruby>べ<ruby>物<rt>もの</rt></ruby>を <ruby>用意<rt>ようい</rt></ruby>しておきます。／ <ruby>部屋<rt>へや</rt></ruby>を そうじしておきます。</div>
+<div class='writing-line'></div>
+<div class='writing-line'></div>
+<div class='writing-line'></div>
+</span></div></div>
+<div class='blockbox'><div class='block-title'>Exercise E : Kanji ↔ かな conversion (model: Quiz §2 ・ Slide 15.5)</div><div class='block-body'><span class='small'>
+かな → 漢字（送り仮名も）, and 漢字 → かな.
+<ol class='enum multicols-2'>
+<li>しぬ → ＿＿</li>
+<li>いみ → ＿＿</li>
+<li>ちゅうい → ＿＿</li>
+<li>なつ の さかな → ＿＿</li>
+<li>ひろい → ＿＿</li>
+<li>あし → ＿＿</li>
+<li>じてんしゃ → ＿＿</li>
+<li>かりる → ＿＿</li>
+<li>はしる → ＿＿</li>
+<li>ばしょ → ＿＿</li>
+<li>たてもの → ＿＿</li>
+<li>ちか を とおる → ＿＿</li>
+</ol>
+<details class='gk-key'><summary>Answer key</summary><div>
+しぬ=<span class='c-red'>死ぬ</span> ・ いみ=<span class='c-red'>意味</span> ・ ちゅうい=<span class='c-red'>注意</span> ・ なつ=<span class='c-red'>夏</span>, さかな=<span class='c-red'>魚</span> ・ ひろい=<span class='c-red'>広い</span> ・ あし=<span class='c-red'>足</span> ・ じてんしゃ=<span class='c-red'>自転車</span> ・ かりる=<span class='c-red'>借りる</span> ・ はしる=<span class='c-red'>走る</span> ・ ばしょ=<span class='c-red'>場所</span> ・ たてもの=<span class='c-red'>建物</span> ・ ちか=<span class='c-red'>地下</span>, とおる=<span class='c-red'>通る</span>
+</div></details>
+</span></div></div>
+<div class='slide-counter'>6 / 7</div>
 </section>
 <section class='slide' id='s5'>
 <h2 class='frametitle'>15.5: Kanji / 漢字 (新しい漢字)</h2>
@@ -228,7 +338,7 @@ table.tex-table th { background: #f4f4f4; font-weight: 600; }
 </ul>
 </div>
 </div>
-<div class='slide-counter'>5 / 5</div>
+<div class='slide-counter'>7 / 7</div>
 </section>
 </main>
 </body>
