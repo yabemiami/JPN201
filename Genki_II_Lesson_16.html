@@ -83,11 +83,21 @@ table.tex-table th { background: #f4f4f4; font-weight: 600; }
   .deck { padding: 12px 8px 32px; }
   .slide { padding: 16px 14px; }
 }
+
+/* exercise-session helpers (quiz prep) */
+details.gk-key { margin-top: 8px; background: white; border: 1px dashed #bbb; border-radius: 5px; padding: 6px 10px; }
+details.gk-key > summary { cursor: pointer; font-weight: 600; color: var(--ink-soft); font-size: 0.88em; list-style: none; }
+details.gk-key > summary::before { content: "\25B6  "; font-size: 0.8em; }
+details.gk-key[open] > summary::before { content: "\25BC  "; }
+details.gk-key > div { margin-top: 6px; font-size: 0.9em; line-height: 1.8; }
+.aim { font-size: 0.85em; color: var(--ink-soft); font-style: italic; margin: 0 0 6px; }
+.multicols-2 { columns: 2; column-gap: 1.4em; }
+ul.multicols-2 li, ol.multicols-2 li { break-inside: avoid-column; }
 </style>
 </head>
 <body>
 <header class="deck-head"><h1>Genki II - Lesson 16 (Lost and Found)</h1></header>
-<nav class="nav-bar"><a href="#s1">Slide 16.1</a><a href="#s2">Slide 16.2</a><a href="#s3">Slide 16.3</a><a href="#s4">Slide 16.4</a><a href="#s5">Slide 16.5</a><a href="#s6">Slide 16.6</a><a href="#s7">Slide 16.7</a><a href="#s8">Slide 16.8</a></nav>
+<nav class="nav-bar"><a href="#s1">Slide 16.1</a><a href="#s2">Slide 16.2</a><a href="#s3">Slide 16.3</a><a href="#s4">Slide 16.4</a><a href="#s5">Slide 16.5</a><a href="#s6">Slide 16.6</a><a href="#s7">Slide 16.7</a><a href="#s16ex1">Ex A–C</a><a href="#s16ex2">Ex D–F</a><a href="#s8">Slide 16.8</a></nav>
 <main class="deck">
 <section class='slide' id='s1'>
 <h2 class='frametitle'>げ16.1.1: Benefactive Constructions: give and receive</h2>
@@ -122,7 +132,7 @@ Bob lent me some money (as a favor/generously/etc.).</li>
 <div class='writing-line'></div>
 </div>
 </div>
-<div class='slide-counter'>1 / 8</div>
+<div class='slide-counter'>1 / 10</div>
 </section>
 <section class='slide' id='s2'>
 <h2 class='frametitle'>げ16.1.2: Benefactive Constructions: give and receive</h2>
@@ -159,7 +169,7 @@ Can be constructed as Benefactive:<br></li>
 <div class='writing-line'></div>
 </div>
 </div>
-<div class='slide-counter'>2 / 8</div>
+<div class='slide-counter'>2 / 10</div>
 </section>
 <section class='slide' id='s3'>
 <h2 class='frametitle'>げ16.1.3: Benefactive Constructions: give and receive</h2>
@@ -192,7 +202,7 @@ Can be constructed as Benefactive:<br></li>
 <div class='writing-line'></div>
 </div>
 </div>
-<div class='slide-counter'>3 / 8</div>
+<div class='slide-counter'>3 / 10</div>
 </section>
 <section class='slide' id='s4'>
 <h2 class='frametitle'>げ16.2: て-form + <em>Receive</em>, <em>would you kindly</em> 〜</h2>
@@ -224,7 +234,7 @@ The <em>receive</em>/`<em>for me</em>' benefactive construction is used as a req
 <div class='writing-line'></div>
 </div>
 </div>
-<div class='slide-counter'>4 / 8</div>
+<div class='slide-counter'>4 / 10</div>
 </section>
 <section class='slide' id='s5'>
 <h2 class='frametitle'>げ16.3: V<sub><span class='sc'>Plain.Pres</span></sub>+といい... `I hope that it turns out ...'</h2>
@@ -254,7 +264,7 @@ The <em>receive</em>/`<em>for me</em>' benefactive construction is used as a req
 <div class='writing-line'></div>
 </div>
 </div>
-<div class='slide-counter'>5 / 8</div>
+<div class='slide-counter'>5 / 10</div>
 </section>
 <section class='slide' id='s6'>
 <h2 class='frametitle'>げ16.4: <strong class='fmb'>Verb<sub><span class='sc'>plain</span></sub></strong>-<ruby>時<rt>とき</rt></ruby></h2>
@@ -316,7 +326,7 @@ Use が to mark the subject in the 時 clause, when it is different from that of
 <div class='writing-line'></div>
 </div>
 </div>
-<div class='slide-counter'>6 / 8</div>
+<div class='slide-counter'>6 / 10</div>
 </section>
 <section class='slide' id='s7'>
 <h2 class='frametitle'>げ16.5: 〜てすみませんでした: I am sorry that I did ...</h2>
@@ -343,7 +353,107 @@ Use が to mark the subject in the 時 clause, when it is different from that of
 <div class='writing-line'></div>
 </div>
 </div>
-<div class='slide-counter'>7 / 8</div>
+<div class='slide-counter'>7 / 10</div>
+</section>
+<!-- ====== L16 Exercises A-C ====== -->
+<section class='slide' id='s16ex1'>
+<h2 class='frametitle'>In-Class Exercises: A–C (Benefactive ・ Requests ・ 〜といい)</h2>
+<div class='blockbox'><div class='block-title'>Exercise A : Benefactive あげる／くれる／もらう (model: Quiz §8 ・ Slide 16.1)</div><div class='block-body'><span class='small'>
+Rewrite as a benefactive. Give a <em>give</em>-version and, where possible, a <em>receive</em>-version.
+<ol class='enum'>
+<li>スーは わたしに <ruby>日本語<rt>にほんご</rt></ruby>を <ruby>教<rt>おし</rt></ruby>えました。</li>
+<li>わたしは <ruby>妹<rt>いもうと</rt></ruby>に ケーキを <ruby>作<rt>つく</rt></ruby>りました。</li>
+<li><ruby>田中<rt>たなか</rt></ruby>さんは ボブに <ruby>町<rt>まち</rt></ruby>を <ruby>案内<rt>あんない</rt></ruby>しました。</li>
+</ol>
+<details class='gk-key'><summary>Answer key</summary><div>
+1a <span class='c-red'>くれる</span>: スーは わたしに 日本語を <ruby>教<rt>おし</rt></ruby>えて<span class='c-red'>くれました</span>。<br>
+1b <span class='c-red'>もらう</span>: わたしは スーに 日本語を <ruby>教<rt>おし</rt></ruby>えて<span class='c-red'>もらいました</span>。<br>
+2a <span class='c-red'>あげる</span>: わたしは 妹に ケーキを <ruby>作<rt>つく</rt></ruby>って<span class='c-red'>あげました</span>。 <span class='fns'>(source = me → no もらう version)</span><br>
+3a <span class='c-red'>あげる</span>: 田中さんは ボブに 町を <ruby>案内<rt>あんない</rt></ruby>して<span class='c-red'>あげました</span>。<br>
+3b <span class='c-red'>もらう</span>: ボブは 田中さんに 町を <ruby>案内<rt>あんない</rt></ruby>して<span class='c-red'>もらいました</span>。
+<div class='fns' style='margin-top:4px'><span class='c-red'>くれる</span> = giver→me ・ <span class='c-red'>あげる</span> = elsewhere ・ <span class='c-red'>もらう</span> cannot be used when the source is me.</div>
+</div></details>
+</span></div></div>
+<div class='blockbox'><div class='block-title'>Exercise B : Polite requests 〜ていただけませんか (model: Slide 16.2)</div><div class='block-body'><span class='small'>
+Make a polite request from each verb.
+<ol class='enum'>
+<li><ruby>読<rt>よ</rt></ruby>む → ＿＿＿</li>
+<li><ruby>手伝<rt>てつだ</rt></ruby>う → ＿＿＿</li>
+<li>ちょっと <ruby>待<rt>ま</rt></ruby>つ → ＿＿＿</li>
+<li><ruby>電話番号<rt>でんわばんごう</rt></ruby>を <ruby>教<rt>おし</rt></ruby>える → ＿＿＿</li>
+</ol>
+<details class='gk-key'><summary>Answer key</summary><div>
+1. <ruby>読<rt>よ</rt></ruby>んで<span class='c-red'>いただけませんか</span>。／ 読んでくれませんか。／ 読んでくれない？<br>
+2. <ruby>手伝<rt>てつだ</rt></ruby>って<span class='c-red'>いただけませんか</span>。<br>
+3. ちょっと <ruby>待<rt>ま</rt></ruby>って<span class='c-red'>いただけませんか</span>。<br>
+4. <ruby>電話番号<rt>でんわばんごう</rt></ruby>を <ruby>教<rt>おし</rt></ruby>えて<span class='c-red'>いただけませんか</span>。
+<div class='fns' style='margin-top:4px'>Politeness: ていただけませんか &gt; てくださいませんか &gt; てくれませんか &gt; てくれない？ (casual).</div>
+</div></details>
+</span></div></div>
+<div class='blockbox'><div class='block-title'>Exercise C : 〜といいですね / といいんですが (model: Quiz §9 ・ Slide 16.3)</div><div class='block-body'><span class='small'>
+Express what you hope for each person (for yourself, use 〜といいんですが).
+<ol class='enum'>
+<li>ロバート：かぜを ひいたんです。 → ＿＿＿</li>
+<li>スー：日本の <ruby>大学院<rt>だいがくいん</rt></ruby>に <ruby>行<rt>い</rt></ruby>きたいんです。 → ＿＿＿</li>
+<li>ジョン：<ruby>宿題<rt>しゅくだい</rt></ruby>を <ruby>忘<rt>わす</rt></ruby>れたんです。 → ＿＿＿</li>
+<li>（you）あした <ruby>旅行<rt>りょこう</rt></ruby>に <ruby>行<rt>い</rt></ruby>くんです。 → ＿＿＿</li>
+</ol>
+<details class='gk-key'><summary>Answer key</summary><div>
+1. （はやく）<ruby>気<rt>き</rt></ruby>が つく / よく なると<span class='c-red'>いいですね</span>。<br>
+2. 行けると<span class='c-red'>いいですね</span>。<br>
+3. <ruby>先生<rt>せんせい</rt></ruby>が おこらないと<span class='c-red'>いいですね</span>。<br>
+4. <ruby>天気<rt>てんき</rt></ruby>が いいと<span class='c-red'>いいんですが</span>。
+<div class='fns' style='margin-top:4px'>For others: 〜といいですね. For yourself: 〜といいんですが. Your own action → potential (行ける).</div>
+</div></details>
+</span></div></div>
+<div class='slide-counter'>8 / 10</div>
+</section>
+<!-- ====== L16 Exercises D-F ====== -->
+<section class='slide' id='s16ex2'>
+<h2 class='frametitle'>In-Class Exercises: D–F (〜とき ・ お訫び ・ Kanji)</h2>
+<div class='blockbox'><div class='block-title'>Exercise D : 〜とき (model: Quiz §10 ・ Slide 16.4)</div><div class='block-body'><span class='small'>
+Translate. Watch present (uncompleted) vs. past (completed) in the 時 clause.
+<ol class='enum'>
+<li>When you come to Japan, please call me.</li>
+<li>When I arrived at the station, the train came.</li>
+<li>When(ever) I go to school, I go by bus.</li>
+<li>While I was watching TV, a guest came.</li>
+</ol>
+<details class='gk-key'><summary>Answer key</summary><div>
+1. <ruby>日本<rt>にほん</rt></ruby>に <ruby>来<rt>く</rt></ruby>るとき、<ruby>電話<rt>でんわ</rt></ruby>してください。 <span class='fns'>(present = not yet arrived)</span><br>
+2. （わたしが）えきに <ruby>着<rt>つ</rt></ruby>いたとき、<ruby>電車<rt>でんしゃ</rt></ruby>が 来ました。 <span class='fns'>(past = already arrived)</span><br>
+3. <ruby>学校<rt>がっこう</rt></ruby>に <ruby>行<rt>い</rt></ruby>くとき、バスで 行きます。<br>
+4. テレビを <ruby>見<rt>み</rt></ruby>ているとき、<ruby>客<rt>きゃく</rt></ruby>が 来ました。
+<div class='fns' style='margin-top:4px'>Different subject in the 時 clause takes <span class='c-red'>が</span>. 〜ているとき = “while …”.</div>
+</div></details>
+</span></div></div>
+<div class='practiceblock'><div class='block-title'>Exercise E : 〜てすみませんでした, apology (model: Quiz §11 ・ Slide 16.5)</div><div class='block-body practice-body'><span class='small'>
+Apologize for two terrible things you did. Use 〜て / 〜なくて + すみませんでした。
+<div class='fns' style='margin:2px 0 6px'>Model: クラスに おくれてすみませんでした。／ <ruby>電話<rt>でんわ</rt></ruby>しなくてすみませんでした。</div>
+<div class='writing-line'></div>
+<div class='writing-line'></div>
+</span></div></div>
+<div class='blockbox'><div class='block-title'>Exercise F : Kanji ↔ かな conversion (model: Quiz §2 ・ Slide 16.8)</div><div class='block-body'><span class='small'>
+かな → 漢字（送り仮名も）, and 漢字 → かな.
+<ol class='enum multicols-2'>
+<li>へや → ＿＿</li>
+<li>せかい → ＿＿</li>
+<li>ぜんぶ → ＿＿</li>
+<li>はじまる → ＿＿</li>
+<li>せんしゅう → ＿＿</li>
+<li>かんがえる → ＿＿</li>
+<li>あける → ＿＿</li>
+<li>みかた → ＿＿</li>
+<li>いがい → ＿＿</li>
+<li>きょうしつ → ＿＿</li>
+<li>うんどう → ＿＿</li>
+<li>こども → ＿＿</li>
+</ol>
+<details class='gk-key'><summary>Answer key</summary><div>
+へや=<span class='c-red'>部屋</span> ・ せかい=<span class='c-red'>世界</span> ・ ぜんぶ=<span class='c-red'>全部</span> ・ はじまる=<span class='c-red'>始まる</span> ・ せんしゅう=<span class='c-red'>先週</span> ・ かんがえる=<span class='c-red'>考える</span> ・ あける=<span class='c-red'>開ける</span> ・ みかた=<span class='c-red'>見方</span> ・ いがい=<span class='c-red'>以外</span> ・ きょうしつ=<span class='c-red'>教室</span> ・ うんどう=<span class='c-red'>運動</span> ・ こども=<span class='c-red'>子供</span>
+</div></details>
+</span></div></div>
+<div class='slide-counter'>9 / 10</div>
 </section>
 <section class='slide' id='s8'>
 <h2 class='frametitle'>16.8: Kanji / 漢字 (新しい漢字)</h2>
@@ -370,7 +480,7 @@ Use が to mark the subject in the 時 clause, when it is different from that of
 </ul>
 </div>
 </div>
-<div class='slide-counter'>8 / 8</div>
+<div class='slide-counter'>10 / 10</div>
 </section>
 </main>
 </body>
